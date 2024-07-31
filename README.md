@@ -1,6 +1,6 @@
 # bank_accounts
 
-A new Flutter project.
+Implemented UI for DIGIT Bank Account Service
 
 ## Getting Started
 
