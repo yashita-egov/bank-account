@@ -48,7 +48,6 @@ Future<void> sendDataToBackend(BankAccount bankAccount) async{
   final body = {
       "requestInfo": {
         "apiId": "Rainmaker",
-        "authToken": "e93c6059-71d8-4f55-b44c-1aec0a723c65",
         "userInfo": {
         "id": 1552,
         "uuid": "0477b319-7cd3-4b5e-98ec-dc7ed140b623",

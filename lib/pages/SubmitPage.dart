@@ -38,18 +38,21 @@ class _SubmitPageState extends State<SubmitPage> {
                 return const Center(child: CircularProgressIndicator());
               }
               else if(state is DataSubmitSuccess){
-                return PanelCard(
-                  title: "Bank Account Submitted successfully", 
-                  type: PanelType.success,
-                  animate: true,
-                  actions: [
-                    Button(
-                      label: "Back to HomePage", 
-                      onPressed: ()=>context.router.popUntilRouteWithName('HomeRoute'), 
-                      type: ButtonType.primary, 
-                      size: ButtonSize.large
-                    )
-                  ],
+                return Center(
+                  child: PanelCard(
+                    title: "Bank Account Submitted successfully", 
+                    type: PanelType.success,
+                    animate: true,
+                    actionAlignment: MainAxisAlignment.center,
+                    actions: [
+                      Button(
+                        label: "Back to HomePage", 
+                        onPressed: ()=>context.router.popUntilRouteWithName('HomeRoute'), 
+                        type: ButtonType.primary, 
+                        size: ButtonSize.large
+                      )
+                    ],
+                  ),
                 );
               }
               
